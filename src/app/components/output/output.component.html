@@ -1,1 +1,210 @@
-<p>output works!</p>
+<div class="output_wrapper">
+
+  <div class="output_sections">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+          aria-selected="true">Section A : What You Told Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+          aria-selected="false">Section - B: DriveStream's Cloud assure Model - What is it</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+          aria-selected="false">Section-C : Amway's TCO Summary</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+        <div class="seactiona_wrapper">
+
+          <div class="tco_card">
+
+            <div class="card_header">
+              <span>General Information</span>
+            </div>
+
+            <div class="card_content">
+
+              <p>
+                Amway is currently operating its Financial platform on Oracle's EBS Application Suite. Amway operates in
+                8 country/countries and has a Financial User population of 100 headquartered in Oregon.
+              </p>
+
+            </div>
+
+
+          </div>
+
+          <div class="tco_card">
+
+            <div class="card_header">
+              <span>HeadCount Information</span>
+            </div>
+
+            <div class="card_content">
+
+              <p>
+                Amway has a team of 17 members supporting the current application. This team consists of 4 Functional
+                FTEs, 1 Developer FTEs, 1 System Admin/DBA FTEs and 11 Consultants/Contractors. The estimated annual
+                payroll cost for this team is estimated at $1,764,000!
+              </p>
+
+            </div>
+
+
+          </div>
+
+          <div class="tco_card">
+
+            <div class="card_header">
+              <span>Application Footprint</span>
+            </div>
+
+            <div class="card_content">
+
+              <p>
+                Amway has the following EBS modules running on version R 12.2.4 implemented:
+              </p>
+
+            </div>
+
+
+          </div>
+
+          <div class="tco_card">
+
+            <div class="card_header">
+              <span>Current Spend</span>
+            </div>
+
+            <div class="card_content">
+              <form>
+
+                <div class="form-group">
+                  <label>Software Licence Cost/Year(Oracle)</label>
+                  <input class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Software Support/Per Year</label>
+                  <input class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Legacy Software Support/Per Year (Oracle)</label>
+                  <input class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Implementation Cost/Year (DS)</label>
+                  <input class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Software Upgrade Cost/18 Months</label>
+                  <input class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Hardware Cost/Year</label>
+                  <input class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Support FTE Headcount Cost/Year</label>
+                  <input class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label>Legacy Support/Per Year (DS) </label>
+                  <input class="form-control">
+                </div>
+
+              </form>
+
+              <div class="form-group">
+                <label>Total</label>
+                <input class="form-control" value="0">
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="financials_wrapper">
+
+            <div class="financials_wrapper">
+
+                <span style="color: #fff">EBS Financials</span>
+    
+            </div>
+
+              <ul>
+
+                <li *ngFor="let jda of jdaList">
+
+                  <div class="tco_card">
+                    <div class="card_header">
+                      <span>{{jda.description}}</span>
+                    </div>
+
+                    <div class="card_content">
+
+                      <div class="card_content_checkbox">
+                        <input type="checkbox">Licened By LatticeSemi
+                        <input type="checkbox">Available on the cloud
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </li>
+
+              </ul>
+
+         
+
+
+          </div>
+
+
+          <div class="tco_card">
+
+            <div class="card_header">
+                <span>Application Upgrade History</span>
+            </div>
+
+            <div class="card_content">
+                <p>Amway has performed 2 upgrades since Feb-2018 with an average spend of $120,000. </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>

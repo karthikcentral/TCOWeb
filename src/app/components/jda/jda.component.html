@@ -1,1 +1,70 @@
-<p>jda works!</p>
+<div class="jda_wrapper">
+
+    <div class="jda_list">
+
+        <div class="jda_list_header">
+
+            <span style="color: #fff">EBS Financials</span>
+
+        </div>
+
+<ul>
+
+    <li *ngFor="let jda of jdaList">
+
+        <div class="tco_card">
+            <div class="card_header">
+                <span>{{jda.description}}</span>
+            </div>
+
+            <div class="card_content" >
+
+                <div class="card_content_checkbox">
+                    <input type="checkbox">Licened By LatticeSemi
+                    <input type="checkbox">Available on the cloud
+                </div>
+
+                <div class="card_content_input">
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Price per user" type="text">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </li>
+
+</ul>
+
+<div class="jda_total_cost">
+
+    <div class="tco_card">
+        <div class="card_header">
+            <span>Total Cost</span>
+        </div>
+
+        <div class="card_content">
+
+            <div class="card_content_input">
+                <div class="form-group">
+                    <input class="form-control" placeholder="Total Cost" type="text">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </div>
+
+</div>
+
+<div class="tco_footer">
+    <!-- <app-tco-footer ></app-tco-footer> -->
+    <button class="but but-primary pre" (click)="goToLogin()">Previous</button>
+    <button class="but but-primary" (click)="goToOuput()">Next</button>
+</div>
