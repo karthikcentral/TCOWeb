@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './assets/scss/card/card';
+@import './assets/scss/input/input';
+@import './assets/scss/button/button';
+
+
+body {
+    font-family: MetricHPE;
+    background-color:  #444;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

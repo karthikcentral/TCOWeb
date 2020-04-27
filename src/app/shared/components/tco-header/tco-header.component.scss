@@ -1,0 +1,45 @@
+.tco_header {
+    background-color:  #444;
+    color: #fff;
+    box-sizing: content-box;
+    padding: 20px 15px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    border-bottom: 1px solid #313131;
+
+
+    .tco_header_brand {
+        font-weight: 600;
+        color: #fff;
+        font-size: 18px;
+        margin-right: 20px;
+        border-right: 1px solid #fff;
+        padding-right: 20px;
+        padding-top: 5px;
+    }
+
+    .tco_sub_header {
+
+
+
+        .tco_header_heading {
+ 
+
+            label {
+                display:block;
+                margin-bottom: 0px;
+                font-weight: 600;
+            }
+    
+            span {
+                font-size: 14px;
+            }
+    
+        }
+
+    }
+
+ 
+
+}
