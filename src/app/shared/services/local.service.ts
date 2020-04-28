@@ -6,9 +6,15 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class LocalService {
 
+  progressName = 'Information' ;
+
   constructor() { }
 
-  progressBarSource$ = new BehaviorSubject('');
-  
+  private progressNameSource = new BehaviorSubject('Information');
+  progressNameResponse$ = this.progressNameSource.asObservable();
+
+  setProgress(value){
+    this.progressNameSource.next(value);
+  }
 
 }

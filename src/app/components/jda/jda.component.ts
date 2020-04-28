@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalService } from 'src/app/shared/services/local.service';
 
 @Component({
   selector: 'app-jda',
@@ -153,17 +155,19 @@ export class JdaComponent implements OnInit {
     
   ]; 
 
-  constructor() { }
+  constructor(private route:Router,private local:LocalService) { }
 
   ngOnInit() {
   }
 
   goToLogin() {
-    this.route.navigateByUrl('login');
+    this.local.setProgress('Client');
+    this.route.navigateByUrl('home/login');
   }
 
   goToOutput() {
-    this.route.navigateByUrl('output');
+    this.local.setProgress('output');
+    this.route.navigateByUrl('home/output');
   }
 
 

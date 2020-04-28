@@ -4,27 +4,23 @@
 
         <ul>
 
-            <li class="currentPhase">
-                Client
-
+            <li [ngClass]="{'currentPhase' : progressName === 'Information'}" >
+                Information Gathering
                 <span>1</span>
             </li>
 
-            <li>
-                Login
-
+            <li [ngClass]="{'currentPhase' : progressName === 'Client'}">
+                Client Input
                 <span>2</span>
             </li>
 
-            <li>
+            <li [ngClass]="{'currentPhase' : progressName === 'Jda'}">
                 JDA
-
                 <span>3</span>
             </li>
 
-            <li>
+            <li [ngClass]="{'currentPhase' : progressName === 'output'}">
                 Output
-
                 <span>4</span>
             </li>
 

@@ -5,15 +5,16 @@ import { ClientComponent } from './components/client/client.component';
 import { JdaComponent } from './components/jda/jda.component';
 import { OutputComponent } from './components/output/output.component';
 import { LoginComponent } from './components/login/login.component';
+import { StartComponent } from './components/start/start.component';
 
 
 const routes: Routes = [
   {
-    path : '',
+    path : 'home',
     component : HomeComponent,
     children : [
       {
-        path : '', 
+        path : 'client', 
         component :ClientComponent
       },
       {
@@ -29,7 +30,10 @@ const routes: Routes = [
         component :LoginComponent
       }
     ]
-  },
+  },{
+    path : '', 
+    component :StartComponent
+  }
 ];
 
 @NgModule({

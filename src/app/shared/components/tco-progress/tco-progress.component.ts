@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalService } from '../../services/local.service';
 
 @Component({
   selector: 'app-tco-progress',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TcoProgressComponent implements OnInit {
 
-  constructor() { }
+  progressName ;
+
+  constructor(private local:LocalService) { 
+  }
 
   ngOnInit() {
+
+    this.local.progressNameResponse$.subscribe(res => {
+      this.progressName = res;
+    });
+
   }
 
 }

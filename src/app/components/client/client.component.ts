@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { LocalService } from 'src/app/shared/services/local.service';
 
 @Component({
   selector: 'app-client',
@@ -8,13 +9,14 @@ import { Route, Router } from '@angular/router';
 })
 export class ClientComponent implements OnInit {
 
-  constructor(private route:Router) { }
+  constructor(private route:Router , private local: LocalService) { }
 
   ngOnInit() {
   }
 
   goToLogin(){
-    this.route.navigateByUrl('jda');
+    this.local.setProgress('Client');
+    this.route.navigateByUrl('home/login');
   }
 
 }

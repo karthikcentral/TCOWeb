@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { LocalService } from 'src/app/shared/services/local.service';
 
 @Component({
   selector: 'app-output',
@@ -7,10 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OutputComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router , private local:LocalService) { }
 
   ngOnInit() {
   }
+
+  goToClient(){
+    this.route.navigateByUrl('home/jda');
+    this.local.setProgress('Jda');
+  }
+
+
+  // goToOutput(){
+  //   this.route.navigateByUrl('home/output');
+  //   this.local.setProgress('output');
+  // }
+
 
   jdaList = [{
     // tslint:disable-next-line:max-line-length

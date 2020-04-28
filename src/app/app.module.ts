@@ -11,6 +11,8 @@ import { TcoHeaderComponent } from './shared/components/tco-header/tco-header.co
 import { TcoProgressComponent } from './shared/components/tco-progress/tco-progress.component';
 import { TcoLayoutComponent } from './shared/components/tco-layout/tco-layout.component';
 import { TcoFooterComponent } from './shared/components/tco-footer/tco-footer.component';
+import { StartComponent } from './components/start/start.component';
+import { LocalService } from './shared/services/local.service';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,14 @@ import { TcoFooterComponent } from './shared/components/tco-footer/tco-footer.co
     TcoHeaderComponent,
     TcoProgressComponent,
     TcoLayoutComponent,
-    TcoFooterComponent
+    TcoFooterComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [LocalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
