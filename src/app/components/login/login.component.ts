@@ -9,9 +9,12 @@ import { LocalService } from 'src/app/shared/services/local.service';
 })
 export class LoginComponent implements OnInit {
 
+  clientobj;
+
   constructor(private route:Router,private local: LocalService) { }
 
   ngOnInit() {
+    this.clientobj = this.local.getClient();
   }
 
   goToInformation(){

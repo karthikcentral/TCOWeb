@@ -10,11 +10,23 @@ export class LocalService {
 
   constructor() { }
 
+  clientObj ;
+
+
   private progressNameSource = new BehaviorSubject('Information');
   progressNameResponse$ = this.progressNameSource.asObservable();
 
   setProgress(value){
     this.progressNameSource.next(value);
+  }
+
+
+  setClient(client){
+    this.clientObj = client;
+  }
+
+  getClient(){
+    return this.clientObj;
   }
 
 }
